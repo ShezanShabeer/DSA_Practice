@@ -7,6 +7,10 @@ public class ReverseArray {
         int[] arr = {12, 54, 99, 100, 88};
         //reverseArr(arr);
         reverseStartEnd(arr);
+        String name = "Shezan12";
+        if (name.matches("[A-Za-z0-9]*")){
+            System.out.println("okay");
+        }
     }
 
     static void reverseStartEnd(int[] arr){
@@ -29,8 +33,7 @@ public class ReverseArray {
             for (int j = 0; j<=i; j++){
                 temp = arr[i];
                 arr[i] = arr[j];
-                arr[j] = temp;
-            }
+                arr[j] = temp;            }
         }
         System.out.println(Arrays.toString(arr));
     }
